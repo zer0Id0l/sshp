@@ -65,7 +65,8 @@ $ ssh host1+host2
 #### To Setup
 
 1. Add the following to your `~/.ssh/config`. This will use Shared SSH connections
-    ```
+
+```
 Host *
 	ForwardAgent yes
 	ControlMaster auto
@@ -73,7 +74,7 @@ Host *
 	ControlPersist 4h
 	KeepAlive yes
 	Compression yes
-	UseRoaming no
+	UseRoaming no	
 ```
 
 2. Add `sshp` to your `~/bin` directory
